@@ -23,7 +23,7 @@ class ServicesActivity : AppCompatActivity() {
 
         progressBar.visibility = View.VISIBLE
 
-        apiService.getServices("your_api_key", "services").enqueue(object : Callback<ServicesResponse> {
+        apiService.getServices("4xvOG3fT0FNKZ9878UvczdvZ2RG2vS67", "services").enqueue(object : Callback<ServicesResponse> {
             override fun onResponse(call: Call<ServicesResponse>, response: Response<ServicesResponse>) {
                 Log.d("API_RESPONSE", "Response: ${response.body()}")
                 progressBar.visibility = View.GONE
